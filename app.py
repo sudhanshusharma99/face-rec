@@ -71,6 +71,39 @@ if st.button("About"):
   st.subheader("Student, Department of Computer Engineering")
   
 html_temp = """
+   <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   </head>
+   <body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/" >Hi! 👋</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/"> Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">QR Code</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
    <div class="" style="background-color:orange;" >
    <div class="clearfix">           
    <div class="col-md-12">
@@ -78,5 +111,13 @@ html_temp = """
    </div>
    </div>
    </div>
+   <div class="fixed-bottom ">
+      <div class="dark bg-dark " style="min-height: 40px;">
+         <marquee style="color:#fff; margin-top: 7px;">
+            <h9>Designed & Developed by Sudhanshu Sharma, Student of Poornima Institute of Engineering and Technology</h9>
+         </marquee>
+      </div>
+   </div>
+   </body>
    """
 st.markdown(html_temp,unsafe_allow_html=True)
